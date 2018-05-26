@@ -29,6 +29,7 @@ class UserObject(graphene.ObjectType):
 def check_phone():
     def resolve(root, info, phone_number):
         try:
+            User
             User.objects.get(phone_number=phone_number)
             return False
         except DoesNotExist:

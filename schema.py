@@ -16,7 +16,6 @@ class Query(ObjectType):
     answers = Answer.get_answer_by_question_id()
     answer_num = Answer.get_answer_number_by_survey_id()
 
-
 class Mutation(ObjectType):
     # User
     sign_up = User.SignUp.Field()
